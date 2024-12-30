@@ -1,0 +1,29 @@
+.card_conteiner {
+  margin: 1rem .5rem;
+  padding: .5rem;
+  background: #fff;
+  border-radius: 15px;
+
+  & .card_img {
+    text-align: center;
+
+    & img {
+      display: none;
+      width: 350px;
+    }
+  }
+
+  & .card_text {
+    & .card_title {
+      text-align: center;
+      font-size: 20px;
+      color: #212121;
+    }
+
+    & .card_text {
+      text-align: left;
+      font-size: 20px;
+      color: #a59d9d;
+    }
+  }
+}

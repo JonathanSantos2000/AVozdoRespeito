@@ -1,0 +1,41 @@
+.contato_conteiner {
+  border: 1px solid #6A1B9A;
+  border-radius: 15px;
+  padding: .5rem;
+  margin: 120px .5rem 15px 0;
+  z-index: 2;
+
+  & .contato, .localizacao {
+    & .contato_Title, .localizacao_Title {
+      text-align: center;
+      font-size: 20px;
+      color: #2D4D5F;
+      margin-bottom: 25px;
+    }
+
+    & .contato_Conteudo {
+      & ul {
+        & li {
+          list-style: none;
+          border-bottom: 1px solid #6A1B9A;
+          margin: 0 10px 48px 10px;
+          font-size: 12px;
+
+          & span {
+            font-weight: 300;
+            color: #6A1B9A;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  & .localizacao {
+    & .localizacao_Conteudo {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px) {
+  .footer_conteiner {
+    height: 507px;
+
+    & .footer_cont {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      & .footer_logo-slogan {
+        width: 50%;
+
+        & .footer_slogan {
+          & h3 {
+            font-size: 20px;
+          }
+
+          & p {
+            font-size: 16px;
+          }
+        }
+      }
+
+      & .footer_menu {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer_conteiner {
+    padding: 0 300px;
+    height: 507px;
+  }
+}

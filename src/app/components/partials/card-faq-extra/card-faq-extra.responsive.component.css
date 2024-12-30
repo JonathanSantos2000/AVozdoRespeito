@@ -1,0 +1,52 @@
+@media screen and (min-width: 1280px) {
+  .card-faq-extra_conteiner {
+    width: 100%;
+
+    & .card-faq-extra_header {
+      & .btns__img_desktop {
+        display: block;
+      }
+
+      & .btns__img_mobile {
+        display: none;
+      }
+    }
+
+    & .conteudo {
+      & .extra_img {
+        width: 100%;
+        padding: 0 .5rem;
+
+        & .img_desktop {
+          display: block;
+          width: 100%;
+
+          & img {
+            width: 100%;
+          }
+
+        }
+
+        & .img_mobile {
+          display: none;
+          width: 100%;
+
+          & img {
+            width: 100%;
+            height: 450px;
+          }
+
+          & .title {
+            font-size: 13px;
+            color: #2D4D5F;
+
+            & span {
+              font-size: 13px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

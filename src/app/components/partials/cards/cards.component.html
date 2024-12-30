@@ -1,0 +1,11 @@
+<div class="cards_conteiner">
+  <div class="cards_title">{{ title }}</div>
+  <div class="cards_sub-title">
+    {{ text }}
+  </div>
+  <div class="cards_button" *ngIf="PageLink !== ''">
+    <button>
+      <a routerLink="{{ PageLink }}">{{ labelButton }}</a>
+    </button>
+  </div>
+</div>

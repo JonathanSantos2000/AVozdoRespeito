@@ -1,0 +1,53 @@
+.card-faq_conteiner {
+  background: #D9D9D9;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #2D4D5F;
+
+  & .card-faq_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background: none;
+    padding: .5rem;
+
+    & .card-faq_title {
+      width: 85%;
+      color: #2D4D5F;
+      text-align: justify;
+    }
+
+    & .card-faq_icon {
+      font-size: 30px;
+      color: #2D4D5F;
+    }
+  }
+
+  & .card-faq_conteudo {
+    margin: .5rem 0;
+    width: 100%;
+
+    & .conteudoAudio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & .autor {
+        width: 100%;
+        text-align: right;
+      }
+    }
+
+    & .extras {
+      width: 100%;
+
+      & .card-extra_title {
+        color: #2D4D5F;
+        text-align: center;
+        font-size: 20px;
+      }
+    }
+  }
+}

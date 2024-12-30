@@ -1,0 +1,67 @@
+.card-faq-extra_conteiner {
+  width: 100%;
+
+  & .card-faq-extra_header {
+    & .btns__img_desktop {
+      display: none;
+    }
+
+    & .btns__img_desktop, .btns__img_mobile, .btns__outros {
+      width: 100%;
+      padding: 0 .5rem;
+      font-size: 20px;
+
+      & .btn-open-extra {
+        width: 100%;
+        border: 1px solid #2D4D5F;
+        border-radius: 15px;
+        background: none;
+        padding: .5rem;
+      }
+
+      & .btn-close-extra {
+        width: 100%;
+        padding: .5rem;
+        border: 1px solid #2D4D5F;
+        border-radius: 15px;
+        background: none;
+      }
+    }
+  }
+
+  & .conteudo {
+    & .extra_img {
+      width: 100%;
+      padding: 0 .5rem;
+
+      & .img_desktop {
+        display: none;
+        width: 100%;
+
+        & img {
+          width: 100%;
+        }
+
+      }
+
+      & .img_mobile {
+        width: 100%;
+
+        & img {
+          width: 100%;
+          height: 450px;
+        }
+
+        & .title {
+          font-size: 13px;
+          color: #2D4D5F;
+
+          & span {
+            font-size: 13px;
+          }
+        }
+
+      }
+    }
+  }
+}

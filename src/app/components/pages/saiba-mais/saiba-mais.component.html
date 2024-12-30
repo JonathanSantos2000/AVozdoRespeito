@@ -1,0 +1,47 @@
+<div class="saiba-mais_conteiner">
+  <section class="main">
+    <div class="main_title-img">
+      <div class="main_title">O que é o Violentômetro?</div>
+      <div class="main_img">
+        <img src="../../../../assets/img/Violentômetro.jpeg" alt="" />
+      </div>
+    </div>
+    <div class="main_texto">
+      <p>
+        O Violentômetro é uma ferramenta visual educativa que apresenta os
+        níveis de gravidade da violência doméstica, desde situações
+        aparentemente sutis até agressões severas. <br /><br />
+        Ele é fundamental para conscientizar as pessoas sobre comportamentos
+        abusivos e identificar os primeiros sinais de violência.
+        <br /><br />
+        Seu objetivo é ajudar a população a perceber quando uma relação está se
+        tornando tóxica e tomar medidas preventivas.
+      </p>
+    </div>
+  </section>
+  <section class="more">
+    <div class="know_more-title">Você Sabia?</div>
+    <div class="card-grid">
+      <div class="card" *ngFor="let know of paginatedItems">
+        <app-small-card
+          id="{{ know.id }}"
+          titulo="{{ know.titulo }}"
+          img="{{ know.img }}"
+          resumo="{{ know.resumo }}"
+          conteudoCompleto="{{ know.conteudoCompleto }}"
+          referencia="{{ know.referencia }}"
+          link="{{ know.link }}"
+        ></app-small-card>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <button (click)="prevPage()" [disabled]="currentPage === 1">
+        Anterior
+      </button>
+      <span>Página {{ currentPage }} de {{ totalPages }}</span>
+      <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+        Próxima
+      </button>
+    </div>
+  </section>
+</div>

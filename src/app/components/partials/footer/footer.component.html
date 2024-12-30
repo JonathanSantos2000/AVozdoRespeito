@@ -1,0 +1,35 @@
+<div class="footer_conteiner">
+  <div class="footer_cont">
+    <div class="footer_logo-slogan">
+      <div class="footer_logo">
+        <img src="../../../../assets/img/logo.png" alt="" />
+      </div>
+      <div class="footer_slogan">
+        <h3>Unindo forças contra a violência doméstica</h3>
+        <p>
+          Conscientização, educação e suporte. Juntos, podemos fazer a diferença
+        </p>
+      </div>
+    </div>
+    <div class="footer_menu">
+      <app-footer-menu
+        title="Sobre"
+        [links]="[
+          { titulo: 'Sobre Nós', endereco: '/sobreoprojeto' },
+          { titulo: 'Sobre DPCAMI', endereco: '/intituicao/sobre' }
+        ]"
+      ></app-footer-menu>
+      <app-footer-menu
+        title="Contato"
+        [links]="[
+          { titulo: 'Contato', endereco: '/contato' },
+          { titulo: 'Contato DPCAMI', endereco: '/intituicao/contato' }
+        ]"
+      ></app-footer-menu>
+    </div>
+  </div>
+  <div class="footer_direitos">
+    © 2024 A Voz do Respeito. <br />
+    Todos os direitos reservados.
+  </div>
+</div>

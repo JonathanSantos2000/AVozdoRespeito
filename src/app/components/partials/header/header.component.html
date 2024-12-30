@@ -1,0 +1,106 @@
+<div class="header-conteiner">
+  <div class="header-logo">
+    <img src="../../../../assets/img/logo.png" alt="" />
+  </div>
+
+  <div class="btns__open-close">
+    <button
+      [class.btnOpen]="menuVariable"
+      class="btn-open-menu"
+      (click)="openMenu()"
+    >
+      <i class="bi bi-list"></i>
+    </button>
+
+    <button
+      [class.btnclose]="menuVariable"
+      class="btn-close-menu"
+      (click)="openMenu()"
+    >
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <button
+      [class.btnclose]="menuVariableInstituicao"
+      class="btn-close-menu"
+      (click)="openMenuInstituicao()"
+    >
+      voltar
+    </button>
+  </div>
+
+  <nav [class.menuClass]="menuVariable" class="mobile">
+    <ul>
+      <li class="menu-container">
+        <a routerLink="" (click)="openMenu()">Home</a>
+      </li>
+      <li>
+        <a routerLink="/sobreoprojeto" (click)="openMenu()"> Sobre o Projeto</a>
+      </li>
+      <li class="menu-container">
+        <a routerLink="#" (click)="openMenuInstituicao()">DPCAMI</a>
+      </li>
+      <li class="menu-container">
+        <a routerLink="/contato" (click)="openMenu()">Contatos</a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav [class.menuClass]="menuVariableInstituicao" class="mobile">
+    <ul>
+      <li class="menu-container">
+        <a routerLink="/intituicao/sobre" (click)="fecharMenuInstituicao()">
+          Sobre
+        </a>
+      </li>
+      <li class="menu-container">
+        <a routerLink="/intituicao/faq" (click)="fecharMenuInstituicao()">
+          FAQ
+        </a>
+      </li>
+      <li class="menu-container">
+        <a routerLink="/intituicao/contato" (click)="fecharMenuInstituicao()">
+          Contato e Localização
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="desktop">
+    <ul>
+      <li class="menu-container">
+        <a routerLink="">Home</a>
+      </li>
+      <li>
+        <a routerLink="/sobreoprojeto">Sobre o Projeto</a>
+      </li>
+      <li class="menu-container">
+        <a routerLink="#">DPCAMI</a>
+        <ul class="sub_menu">
+          <li class="menu-container">
+            <a routerLink="/intituicao/sobre" (click)="fecharMenuInstituicao()">
+              Sobre
+            </a>
+          </li>
+          <li class="menu-container">
+            <a routerLink="/intituicao/faq" (click)="fecharMenuInstituicao()">
+              FAQ
+            </a>
+          </li>
+          <li class="menu-container">
+            <a
+              routerLink="/intituicao/contato"
+              (click)="fecharMenuInstituicao()"
+            >
+              Contato e Localização
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-container">
+        <a routerLink="/contato">Contatos</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div [class.overlay-menu]="overlayVariable"></div>

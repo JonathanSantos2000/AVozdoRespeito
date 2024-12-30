@@ -1,0 +1,28 @@
+@media screen and (min-width: 768px) {
+  .InstituicaoParceira {
+    & .card {
+      & .line {
+        & img {
+          width: 155px;
+          height: 96px;
+        }
+
+        & .title {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  app-cards {
+    margin: 1.8rem 300px;
+  }
+
+  .InstituicaoParceira {
+    & .card {
+      padding: 0 300px;
+    }
+  }
+}

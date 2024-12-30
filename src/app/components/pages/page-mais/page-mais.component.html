@@ -1,0 +1,15 @@
+<div class="page-mais_conteiner">
+  <div class="page-mais_Title">{{ know_more["titulo"] }}</div>
+  <div class="page-mais_Conteudo">
+    <p *ngFor="let conteudo of know_more['conteudoCompleto']">
+      {{ conteudo['conteudo'] }}
+      <br />
+      <br />
+    </p>
+    <br />
+    <p>
+      link Referencia:
+      <a href="{{ know_more['link'] }}">{{ know_more["referencia"] }}</a>
+    </p>
+  </div>
+</div>

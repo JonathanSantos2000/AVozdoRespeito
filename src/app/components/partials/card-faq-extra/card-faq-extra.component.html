@@ -1,0 +1,47 @@
+<div class="card-faq-extra_conteiner">
+  <div class="card-faq-extra_header">
+    <div class="btns__img_desktop" *ngIf="TipoExtra == 'Foto Desktop'">
+      <button class="btn-open-extra" *ngIf="!status" (click)="openExtra()">
+        Mostrar <i class="bi bi-plus"></i>
+      </button>
+      <button class="btn-close-extra" *ngIf="status" (click)="openExtra()">
+        Mostrar <i class="bi bi-dash"></i>
+      </button>
+    </div>
+    <div class="btns__img_mobile" *ngIf="TipoExtra == 'Foto Mobile'">
+      <button class="btn-open-extra" *ngIf="!status" (click)="openExtra()">
+        Mostrar <i class="bi bi-plus"></i>
+      </button>
+      <button class="btn-close-extra" *ngIf="status" (click)="openExtra()">
+        Mostrar <i class="bi bi-dash"></i>
+      </button>
+    </div>
+
+    <div
+      class="btns__outros"
+      *ngIf="TipoExtra != 'Foto Mobile' && TipoExtra != 'Foto Desktop'"
+    >
+      <button class="btn-open-extra" *ngIf="!status" (click)="openExtra()">
+        Mostrar <i class="bi bi-plus"></i>
+      </button>
+      <button class="btn-close-extra" *ngIf="status" (click)="openExtra()">
+        Mostrar <i class="bi bi-dash"></i>
+      </button>
+    </div>
+  </div>
+  <div class="conteudo" *ngIf="status">
+    <div class="extra_img">
+      <div class="img_desktop" *ngIf="TipoExtra == 'Foto Desktop'">
+        <img src="../../../../assets/img/{{ link }}" alt="" />
+        <div class="title"><span>Titulo: </span>{{ TituloExtra }}</div>
+      </div>
+      <div class="img_mobile" *ngIf="TipoExtra == 'Foto Mobile'">
+        <img src="../../../../assets/img/{{ link }}" alt="" />
+        <div class="title"><span>Titulo: </span>{{ TituloExtra }}</div>
+      </div>
+    </div>
+    <div class="extra_link">
+      Link da reportagem: <a href="{{ link }}">{{ TituloExtra }}</a>
+    </div>
+  </div>
+</div>

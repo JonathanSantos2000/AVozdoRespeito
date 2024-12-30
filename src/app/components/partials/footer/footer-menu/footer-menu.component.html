@@ -1,0 +1,21 @@
+<div class="footer-menu_conteiner">
+  <div class="menu-title">
+    <h1>{{ title }}</h1>
+    <button *ngIf="!status" (click)="changeStatus()">
+      <i class="bi bi-caret-down-fill"></i>
+    </button>
+    <button *ngIf="status" (click)="changeStatus()">
+      <i class="bi bi-caret-up-fill"></i>
+    </button>
+  </div>
+  <div class="line" *ngIf="!status"></div>
+  <div class="menu" *ngIf="status">
+    <ul *ngFor="let link of links">
+      <li>
+        <a routerLink="{{ link.endereco }}" (click)="changeStatus()">
+          {{ link.titulo }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

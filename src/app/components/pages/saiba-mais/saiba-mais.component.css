@@ -1,0 +1,49 @@
+.saiba-mais_conteiner {
+  margin: 120px .5rem 15px 0;
+  text-align: center;
+  font-size: 30px;
+  padding: .5rem;
+
+  & .main {
+    & .main_title-img {
+      display: flex;
+      flex-direction: column-reverse;
+
+      & .main_title {
+        font-size: 20px;
+        color: #2D4D5F;
+      }
+
+      & .main_img {
+        & img {
+          width: 100%;
+        }
+      }
+    }
+
+    & .main_texto {
+      & p {
+        text-align: justify;
+        font-size: 16px;
+        color: #2D4D5F;
+      }
+    }
+  }
+
+  & .more {
+
+    & .pagination-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+
+
+      & button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+
+  }
+}

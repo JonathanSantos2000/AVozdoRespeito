@@ -1,0 +1,41 @@
+.footer-menu_conteiner {
+  color: #CCC;
+
+  & .menu-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & button {
+      border: none;
+      background: none;
+
+      & i {
+        font-size: 30px;
+        color: #CCC;
+      }
+    }
+  }
+
+  & .line {
+    width: 100%;
+    border-top: 1px solid #CCC;
+  }
+
+  & .menu {
+    & ul {
+      font-size: 20px;
+
+      & li {
+        list-style: none;
+        border-bottom: 1px solid #CCC;
+        color: #CCC;
+
+        & a {
+          color: #CCC;
+        }
+      }
+    }
+  }
+}

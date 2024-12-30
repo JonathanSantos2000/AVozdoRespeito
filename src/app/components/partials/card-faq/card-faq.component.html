@@ -1,0 +1,37 @@
+<div class="card-faq_conteiner">
+  <button class="card-faq_header" (click)="changeStatus()">
+    <div class="card-faq_title">
+      {{ titulo }}
+    </div>
+    <div class="card-faq_icon">
+      <i *ngIf="!status" class="bi bi-caret-down-fill"></i>
+      <i *ngIf="status" class="bi bi-caret-up-fill"></i>
+    </div>
+  </button>
+  <div class="card-faq_conteudo" *ngIf="status">
+    <div class="conteudoAudio">
+      <audio controls="controls">
+        <source
+          src="../../../../assets/{{ resposta[0].nomeAutor }}/{{
+            resposta[0].resposta
+          }}"
+          type="audio/mp3"
+        />
+        seu navegador não suporta HTML5
+      </audio>
+      <div class="autor">Respondida por: {{ resposta[0].nomeAutor }}</div>
+    </div>
+
+    <div *ngIf="resposta[0].extras > []" class="extras">
+      <div class="card-extra_title">Referências citadas</div>
+      <div class="card_extra" *ngFor="let extra of resposta[0].extras">
+        <app-card-faq-extra
+          TipoExtra="{{ extra.TipoExtra }}"
+          TituloExtra="{{ extra.TituloExtra }}"
+          link="{{ extra.link }}"
+        ></app-card-faq-extra>
+      </div>
+    </div>
+  </div>
+</div>
+

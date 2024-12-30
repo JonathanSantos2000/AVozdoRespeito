@@ -1,0 +1,45 @@
+.contato-projeto_conteiner {
+  border: 1px solid #6A1B9A;
+  border-radius: 15px;
+  padding: .5rem;
+  margin: 120px .5rem 15px 0;
+  z-index: 2;
+
+  & .contato-projeto_Title {
+    text-align: center;
+    font-size: 20px;
+    color: #2D4D5F;
+  }
+
+
+  & form {
+    max-width: 400px;
+    margin: auto;
+
+    & label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    & input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    & button {
+      background: linear-gradient(90deg, #6A1B9A 0%, #03232D 250%);
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    & button:hover {
+      background: linear-gradient(90deg, #03232D 0%, #6A1B9A 250%);
+    }
+  }
+}
